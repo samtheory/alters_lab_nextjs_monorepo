@@ -1,0 +1,1 @@
+export const shorten = (addr:string,n=4)=> addr? addr.slice(0,2+n)+'…'+addr.slice(-n):'';

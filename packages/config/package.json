@@ -1,0 +1,16 @@
+{
+  "name": "@config/shared",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./tsconfig/base.json",
+  "dependencies": {
+    "tailwindcss": "^4"
+  },
+  "exports": {
+    "./tsconfig/base": "./tsconfig/base.json",
+    "./tsconfig/nextjs": "./tsconfig/nextjs.json",
+    "./tailwind": "./tailwind/tailwind.config.ts",
+    "./eslint": "./eslint/eslint.config.mjs"
+  }
+}

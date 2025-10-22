@@ -1,0 +1,9 @@
+
+> duels@0.1.0 build E:\Projects\______ALTERS_____\alters_lab_nextjs_monorepo\apps\duels
+> next build
+
+   ▲ Next.js 16.0.0 (Turbopack)
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 5.1s
+   Running TypeScript ...

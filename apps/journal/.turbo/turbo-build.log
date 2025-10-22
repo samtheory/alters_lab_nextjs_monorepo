@@ -1,0 +1,10 @@
+
+> journal@0.1.0 build E:\Projects\______ALTERS_____\alters_lab_nextjs_monorepo\apps\journal
+> next build
+
+   ▲ Next.js 16.0.0 (Turbopack)
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 4.8s
+   Running TypeScript ...
+   Collecting page data ...

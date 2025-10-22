@@ -1,0 +1,24 @@
+name: build-and-push
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  arena:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Arena Docker
+        run: |
+          docker build -f apps/arena/Dockerfile -t registry.example.com/arena:latest .
+      # - name: Push
+      #   run: docker push registry.example.com/arena:latest
+
+  duels:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build Duels Docker
+        run: |
+          docker build -f apps/duels/Dockerfile -t registry.example.com/duels:latest .
+      # - name: Push
+      #   run: docker push registry.example.com/duels:latest

@@ -1,0 +1,20 @@
+{
+  "name": "alters_lab_nextjs_monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm turbo run dev --parallel",
+    "build": "pnpm turbo run build",
+    "lint": "pnpm turbo run lint",
+    "typecheck": "pnpm turbo run typecheck"
+  },
+ 
+  "author": "SAJJAD ALIZADEH",
+  "license": "ISC",
+  "packageManager": "pnpm@10.19.0",
+  "devDependencies": {
+    "turbo": "^2.5.8"
+  }
+}
