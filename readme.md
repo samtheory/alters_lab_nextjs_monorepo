@@ -1,5 +1,17 @@
 # 🚀 Alters Lab Next.js Monorepo
 
+[![Build Status](https://github.com/samtheory/alters_lab_nextjs_monorepo/actions/workflows/build.yaml/badge.svg)](https://github.com/samtheory/alters_lab_nextjs_monorepo/actions)
+[![Coverage Status](https://img.shields.io/codecov/c/github/samtheory/alters_lab_nextjs_monorepo?logo=codecov)](https://codecov.io/gh/samtheory/alters_lab_nextjs_monorepo)
+[![GitHub Stars](https://img.shields.io/github/stars/samtheory/alters_lab_nextjs_monorepo?style=social)](https://github.com/samtheory/alters_lab_nextjs_monorepo/stargazers)
+
+[![Monorepo](https://img.shields.io/badge/monorepo-pnpm%20workspace-blueviolet?logo=pnpm)](https://pnpm.io)
+[![Next.js](https://img.shields.io/badge/Next.js-16.0.0-black?logo=next.js)](https://nextjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-Strict-blue?logo=typescript)](https://www.typescriptlang.org)
+[![TurboRepo](https://img.shields.io/badge/TurboRepo-Enabled-8B5CF6?logo=turbo)](https://turbo.build)
+[![Zustand](https://img.shields.io/badge/Zustand-State%20Management-4B5563?logo=zustand)](https://zustand-demo.pmnd.rs)
+[![shadcn/ui](https://img.shields.io/badge/shadcn--ui-React%20Components-38BDF8?logo=react)](https://ui.shadcn.com)
+[![Hero UI](https://img.shields.io/badge/Hero%20UI-Component%20Library-22D3EE?logo=react)](https://heroui.dev)
+
 A **production-ready monorepo** featuring **Next.js 16**, **React 19**, comprehensive form handling, state management, and modern UI libraries. Built with enterprise-grade tooling for Web3 wallet analytics.
 
 ## ✨ Key Features
@@ -38,9 +50,11 @@ A **production-ready monorepo** featuring **Next.js 16**, **React 19**, comprehe
 ## 🎯 Main Applications
 
 ### � **Wallet Scanner** (`apps/wallet-scan`)
+
 **Advanced Web3 wallet analytics and portfolio tracking**
 
 **Features:**
+
 - **Wallet Analysis**: Real-time portfolio tracking and performance analytics
 - **High-Potential Discovery**: AI-powered identification of successful wallets
 - **Trading Signals**: Buy/sell alerts based on wallet activity
@@ -49,6 +63,7 @@ A **production-ready monorepo** featuring **Next.js 16**, **React 19**, comprehe
 - **UI Component Test**: `/test` - Hero UI component demonstration
 
 **Tech Stack:**
+
 - Next.js 16 + React 19 + TypeScript
 - Hero UI + shadcn/ui components
 - Zustand state management
@@ -58,6 +73,7 @@ A **production-ready monorepo** featuring **Next.js 16**, **React 19**, comprehe
 ## �📦 Core Packages
 
 ### 🎨 `@ui/shared` - UI Component Library
+
 **shadcn/ui components with Tailwind CSS and modern variants**
 
 ```typescript
@@ -68,11 +84,13 @@ const button = buttonVariants({ variant: "outline", size: "lg" })
 ```
 
 **Components:**
+
 - ✅ Button (with CVA variants)
 - ✅ Card components (Header, Content, Footer)
 - ✅ Utility functions (cn, class merging)
 
 ### 📋 `@forms/shared` - Form Handling System
+
 **Complete form solution with validation, multi-step wizards, and auto-save**
 
 ```typescript
@@ -91,6 +109,7 @@ const form = useZodForm(walletAddressSchema, {
 ```
 
 **Features:**
+
 - ✅ **Pre-built Components**: Wallet scanner, auth, profile, settings forms
 - ✅ **Custom Hooks**: useZodForm, useFormSubmission, useAutoSave, useMultiStepForm
 - ✅ **Validation Schemas**: Comprehensive Zod schemas for all form types
@@ -98,6 +117,7 @@ const form = useZodForm(walletAddressSchema, {
 - ✅ **Auto-save**: Automatic form data persistence
 
 ### 🏪 `@store/shared` - State Management
+
 **Zustand stores with Immer middleware and persistence**
 
 ```typescript
@@ -111,12 +131,14 @@ const { theme, setTheme, notifications } = useAppStore()
 ```
 
 **Stores:**
+
 - ✅ **Wallet Store**: Scanner state, wallet data, high-potential tracking
 - ✅ **App Store**: Theme, notifications, user preferences
 - ✅ **Persistence**: LocalStorage integration
 - ✅ **Immer Integration**: Immutable state updates
 
 ### 🌐 `@api/client` - Enhanced API Client
+
 **Production-ready API client with authentication, caching, and error handling**
 
 ```typescript
@@ -133,6 +155,7 @@ AuthManager.login(credentials)
 ```
 
 **Features:**
+
 - ✅ **React Query Integration**: Server state management with caching
 - ✅ **Authentication**: JWT token management with auto-refresh
 - ✅ **Interceptors**: Request/response transformation
@@ -199,10 +222,10 @@ pnpm dev
 
 The monorepo will start the following services:
 
-- 🔗 **API Server**: http://localhost:4000 (Bun + Hono)
-- 🔍 **Wallet Scanner**: http://localhost:3001 (Next.js + Hero UI)
-- ⚔️ **Duels**: http://localhost:3002 (Next.js)
-- 📔 **Journal**: http://localhost:3003 (Next.js)
+- 🔗 **API Server**: <http://localhost:4000> (Bun + Hono)
+- 🔍 **Wallet Scanner**: <http://localhost:3001> (Next.js + Hero UI)
+- ⚔️ **Duels**: <http://localhost:3002> (Next.js)
+- 📔 **Journal**: <http://localhost:3003> (Next.js)
 
 ## 📋 Available Commands
 
@@ -328,14 +351,16 @@ const buttonVariants = cva("base-styles", {
 
 ### Wallet Scanner Application
 
-Visit the **Wallet Scanner** app at http://localhost:3001 to explore:
+Visit the **Wallet Scanner** app at <http://localhost:3001> to explore:
 
 **Main Dashboard:**
+
 - Real-time wallet analysis
 - Hero UI components showcase
 - State management demonstration
 
 **Forms Demo** (`/forms`):
+
 - ✅ **Wallet Address Form**: Zod validation + auto-save
 - ✅ **Multi-step Wizard**: Progress tracking + navigation
 - ✅ **User Profile**: Complex form with nested validation
@@ -343,6 +368,7 @@ Visit the **Wallet Scanner** app at http://localhost:3001 to explore:
 - ✅ **Authentication**: Login/register with error handling
 
 **Component Test** (`/test`):
+
 - Hero UI component library showcase
 - Interactive component examples
 - Theme switching demonstration
@@ -352,21 +378,25 @@ Visit the **Wallet Scanner** app at http://localhost:3001 to explore:
 ### Why This Stack?
 
 **Next.js 16 + React 19:**
+
 - ✅ Latest features (Server Components, Suspense, Concurrent Features)
 - ✅ Turbopack for fast development builds
 - ✅ React Compiler for automatic optimization
 
 **Dual UI Libraries:**
+
 - ✅ **shadcn/ui**: Customizable, copy-paste components
 - ✅ **Hero UI**: Complete component library with built-in functionality
 - ✅ Best of both worlds: flexibility + productivity
 
 **Zustand + React Query:**
+
 - ✅ **Zustand**: Simple, lightweight state management
 - ✅ **React Query**: Server state, caching, and synchronization
 - ✅ Clear separation of client vs server state
 
 **pnpm + Turbo:**
+
 - ✅ **pnpm**: Fast, disk-efficient package management
 - ✅ **Turbo**: Intelligent build caching and parallelization
 - ✅ Monorepo optimization for large codebases
@@ -374,6 +404,7 @@ Visit the **Wallet Scanner** app at http://localhost:3001 to explore:
 ### Project Patterns
 
 **Package Organization:**
+
 ```text
 packages/
 ├── ui/           # Component library (shadcn/ui)
@@ -386,6 +417,7 @@ packages/
 ```
 
 **Import Conventions:**
+
 ```typescript
 // Workspace packages
 import { Button } from '@ui/shared'
@@ -427,6 +459,7 @@ curl http://localhost:4000/health
 ### Common Issues
 
 **1. Hydration Errors:**
+
 ```bash
 # Fixed: Remove dynamic content from SSR
 # Use useEffect for client-side only content
@@ -436,6 +469,7 @@ useEffect(() => {
 ```
 
 **2. Module Resolution:**
+
 ```bash
 # Ensure workspace dependencies are installed
 pnpm install
@@ -445,6 +479,7 @@ pnpm store prune
 ```
 
 **3. Type Errors:**
+
 ```bash
 # Rebuild TypeScript references
 pnpm build:types
@@ -456,11 +491,13 @@ pnpm --filter @forms/shared list
 ### Development Tips
 
 **Hot Reload Issues:**
+
 - Restart dev server: `pnpm dev`
 - Clear Next.js cache: `rm -rf .next`
 - Reinstall dependencies: `pnpm install`
 
 **Performance Optimization:**
+
 - Use `pnpm --filter` for targeted commands
 - Enable Turbo cache: `turbo build --cache-dir=.turbo`
 - Monitor bundle size: `pnpm analyze`
@@ -495,13 +532,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 *Transforming Web3 analytics with modern React architecture*
 
 # Run specific app
-pnpm --filter arena dev    # http://localhost:3001
-pnpm --filter duels dev    # http://localhost:3002  
-pnpm --filter journal dev  # http://localhost:3003
+
+pnpm --filter arena dev    # <http://localhost:3001>
+pnpm --filter duels dev    # <http://localhost:3002>  
+pnpm --filter journal dev  # <http://localhost:3003>
 pnpm --filter api dev      # Bun server
 
 # Run multiple specific apps
+
 pnpm --filter arena --filter duels dev
+
 ```
 
 ### Building
@@ -518,6 +558,7 @@ pnpm turbo run build
 ```
 
 ### Linting & Type Checking
+
 ```bash
 # Lint all packages
 pnpm lint
@@ -530,6 +571,7 @@ pnpm --filter arena lint
 ```
 
 ### Package Management
+
 ```bash
 # Add dependency to specific workspace
 pnpm --filter arena add react-query
@@ -548,19 +590,23 @@ pnpm --filter arena remove old-package
 ## 🛠️ Development Workflow
 
 ### Adding a New Shared Component
+
 1. Create component in `packages/ui/src/components/`
 2. Export it in `packages/ui/src/index.ts`
 3. Import in your app: `import { NewComponent } from "@ui/shared"`
 
 ### Adding a New Utility Function
+
 1. Add function to appropriate category in `packages/utils/src/`
 2. Export it in the category's `index.ts`
 3. Import: `import { newFunction } from "@utils/shared/category"`
 
 ### Creating a New App
+
 1. Create new folder in `apps/`
 2. Add to `pnpm-workspace.yaml` (already configured with `apps/*`)
 3. Add shared dependencies to the new app's `package.json`:
+
    ```json
    {
      "dependencies": {
@@ -575,14 +621,15 @@ pnpm --filter arena remove old-package
 
 ## 📱 App URLs (Development)
 
-- **Arena**: http://localhost:3001
-- **Duels**: http://localhost:3002
-- **Journal**: http://localhost:3003
-- **API**: http://localhost:4000
+- **Arena**: <http://localhost:3001>
+- **Duels**: <http://localhost:3002>
+- **Journal**: <http://localhost:3003>
+- **API**: <http://localhost:4000>
 
 ## 🐳 Docker & Deployment
 
 ### Using Docker Compose
+
 ```bash
 # Build and run all services
 cd infra
@@ -594,6 +641,7 @@ docker-compose up arena
 ```
 
 ### Individual Docker Builds
+
 ```bash
 # Build API
 cd apps/api
@@ -605,6 +653,7 @@ docker build -t alters-arena .
 ```
 
 ### Production Build
+
 ```bash
 # Build all for production
 pnpm turbo run build
@@ -617,14 +666,17 @@ pnpm start
 ## 🔧 Configuration
 
 ### Environment Variables
+
 Create `.env.local` files in each app directory:
 
 **Apps (.env.local)**
+
 ```env
 NEXT_PUBLIC_API_BASE=http://localhost:8787
 ```
 
 **API (.env)**
+
 ```env
 PORT=8787
 NODE_ENV=production
@@ -639,6 +691,7 @@ When adding external dependencies to shared packages, consider:
 3. **Dev Dependencies**: For build tools in `@config/shared`
 
 Example for `@ui/shared`:
+
 ```json
 {
   "peerDependencies": {
@@ -655,7 +708,7 @@ Example for `@ui/shared`:
 
 ### Common Issues
 
-1. **"Module not found" errors**: 
+1. **"Module not found" errors**:
    - Run `pnpm install` in root
    - Check if package is added to dependencies with `workspace:*`
 
@@ -672,6 +725,7 @@ Example for `@ui/shared`:
    - Check for circular dependencies between packages
 
 ### Useful Debug Commands
+
 ```bash
 # Check workspace packages
 pnpm list --depth=0
@@ -694,7 +748,7 @@ pnpm turbo run build --dry=json
 - **Backend**: Bun + Hono
 - **Styling**: Tailwind CSS 4
 - **Containerization**: Docker
-- **CI/CD**: GitHub Actions
+- **CI/CD**: GitLab CI
 
 ## 👥 Contributing
 
