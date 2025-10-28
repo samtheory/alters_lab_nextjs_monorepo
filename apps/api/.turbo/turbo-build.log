@@ -2,7 +2,7 @@
 > api@1.0.0 build E:\Projects\______ALTERS_____\alters_lab_nextjs_monorepo\apps\api
 > bun build ./src/index.ts --outdir dist --target bun
 
-Bundled 26 modules in 21ms
+Bundled 26 modules in 83ms
 
   index.js  50.51 KB  (entry point)
 

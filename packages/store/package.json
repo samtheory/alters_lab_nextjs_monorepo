@@ -1,0 +1,24 @@
+{
+  "name": "@store/shared",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./wallet": "./src/stores/wallet.ts",
+    "./app": "./src/stores/app.ts"
+  },
+  "dependencies": {
+    "zustand": "^5.0.0",
+    "immer": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19",
+    "@types/react-dom": "^19"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  }
+}
