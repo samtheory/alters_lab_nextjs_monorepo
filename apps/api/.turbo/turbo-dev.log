@@ -1,0 +1,5 @@
+
+> api@1.0.0 dev E:\Projects\______ALTERS_____\alters_lab_nextjs_monorepo\apps\api
+> cross-env PORT=4000 bun --hot src/index.ts
+
+Started development server: http://localhost:4000

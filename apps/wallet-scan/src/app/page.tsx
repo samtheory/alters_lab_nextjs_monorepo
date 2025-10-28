@@ -2,14 +2,12 @@
 import { Button as ShadcnButton } from "@ui/shared";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@ui/shared";
 import { Button as HeroButton, Input, Chip } from "@heroui/react";
-import { nowISO } from "@utils/shared/time";
 import { health } from "@api/client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
 export default function Page() {
   const [apiStatus, setApiStatus] = useState("Loading...");
-  const currentTime = nowISO();
 
   useEffect(() => {
     const checkHealth = async () => {
@@ -37,7 +35,7 @@ export default function Page() {
             and discover high-potential wallets with real-time insights.
           </p>
           <Chip color="success" variant="flat">
-            Status: {apiStatus} • {currentTime}
+            Status: {apiStatus}
           </Chip>
         </div>
 
