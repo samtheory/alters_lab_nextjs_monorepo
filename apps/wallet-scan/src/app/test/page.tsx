@@ -121,8 +121,8 @@ export default function TestPage() {
                 <p className="text-sm">Switch: <code>{switchValue ? 'on' : 'off'}</code></p>
                 <p className="text-sm">Selected: <code>{selectValue}</code></p>
               </div>
-              <Button 
-                color="success" 
+              <Button
+                color="success"
                 onPress={() => alert('Hero UI is working!')}
                 className="w-full"
               >

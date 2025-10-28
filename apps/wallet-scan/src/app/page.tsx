@@ -20,7 +20,7 @@ export default function Page() {
         setApiStatus("Error");
       }
     };
-    
+
     checkHealth();
   }, []);
 
