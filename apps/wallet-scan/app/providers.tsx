@@ -3,7 +3,7 @@
 import type { ThemeProviderProps } from "next-themes";
 
 import * as React from "react";
-import { HeroUIProvider } from "@heroui/system";
+import { HeroUIProvider, type HeroUIProviderProps } from "@heroui/system";
 import { useRouter } from "next/navigation";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
@@ -23,9 +23,13 @@ declare module "@react-types/shared" {
 export function Providers({ children, themeProps }: ProvidersProps) {
   const router = useRouter();
 
-  return (
-    <HeroUIProvider navigate={router.push}>
+  const providerProps: HeroUIProviderProps = {
+    navigate: router.push,
+    children: (
       <NextThemesProvider {...themeProps}>{children}</NextThemesProvider>
-    </HeroUIProvider>
-  );
+    ),
+  };
+
+  // Call the provider directly and assert the return type to satisfy the compiler.
+  return HeroUIProvider(providerProps) as React.ReactElement;
 }

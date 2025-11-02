@@ -1,28 +1,59 @@
 {
+  "extends": "../../packages/config/tsconfig/nextjs.json",
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./*"
+      ],
+      "@api/client": [
+        "../../packages/api-client/src/index.ts"
+      ],
+      "@api/client/*": [
+        "../../packages/api-client/src/*"
+      ],
+      "@config/shared/tailwind": [
+        "../../packages/config/tailwind/tailwind.config.ts"
+      ],
+      "@types/shared": [
+        "../../packages/types/src/index.ts"
+      ],
+      "@types/shared/*": [
+        "../../packages/types/src/*"
+      ],
+      "@ui/shared": [
+        "../../packages/ui/src/index.ts"
+      ],
+      "@ui/shared/*": [
+        "../../packages/ui/src/*"
+      ],
+      "@utils/shared": [
+        "../../packages/utils/src/index.ts"
+      ],
+      "@utils/shared/*": [
+        "../../packages/utils/src/*"
+      ]
+    },
     "plugins": [
       {
         "name": "next"
       }
     ],
-    "paths": {
-      "@/*": ["./*"]
-    }
+    "allowJs": true,
+    "incremental": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
