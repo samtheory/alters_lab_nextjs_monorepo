@@ -1,6 +1,11 @@
 import type { IconSvgProps } from "@/types";
 
-export const Logo = ({ size = 36, width, height, ...props }: IconSvgProps): React.JSX.Element => (
+export const Logo = ({
+  size = 36,
+  width,
+  height,
+  ...props
+}: IconSvgProps): React.JSX.Element => (
   // @ts-expect-error - React 19 SVG attribute typing issue
   <svg
     fill="none"

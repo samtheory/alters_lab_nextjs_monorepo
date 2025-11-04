@@ -6,11 +6,11 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm turbo run dev --parallel",
+    "db": "cd pb && pocketbase.exe serve --http 127.0.0.1:8080",
     "build": "pnpm turbo run build",
     "lint": "pnpm turbo run lint",
     "typecheck": "pnpm turbo run typecheck"
   },
- 
   "author": "SAJJAD ALIZADEH",
   "license": "ISC",
   "packageManager": "pnpm@10.19.0",
