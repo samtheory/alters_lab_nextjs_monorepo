@@ -1,0 +1,11 @@
+
+> wallet-scan@0.0.1 dev E:\Projects\______ALTERS_____\alters_lab_nextjs_monorepo\apps\wallet-scan
+> next dev --turbopack -p 3001
+
+ ⚠ Invalid next.config.js options detected: 
+ ⚠     Unrecognized key(s) in object: 'turbo' at "experimental"
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+   ▲ Next.js 16.0.1 (Turbopack)
+   - Local:        http://localhost:3001
+   - Network:      http://172.20.96.1:3001
+   - Experiments (use with caution):
